@@ -1,0 +1,13 @@
+┌──(mayowa㉿kali)-[~]
+└─$ sudo nmap -sS 192.168.0.6
+Starting Nmap 7.98 at 2026-09-02 14:27 +0100
+Nmap scan report for 192.168.0.6
+Host is up (0.00038s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT STATE SERVICE
+21/tcp open ftp
+22/tcp open ssh
+80/tcp open http
+MAC Address: 08:00:27:15:AE:AD (Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.76 seconds

@@ -130,16 +130,20 @@ The alert was analyzed using the following information:
 network-intrusion-detection-lab/
 ├── README.md
 ├── images/
-│   ├── 01_architecture_setup.png
+│   ├── 01_setup.png
 │   ├── 02_ping.png
 |   ├── 03_Nmap_scan.png
 │   ├── 04_suricata_ping_alerts.png
 │   ├── 05_suricata_Nmap_alert.png
 ├── logs/
 │   ├── nmap_scan_output.txt
-│   └── suricata_eve.json
+│   └── ping_scan_output.txt
 └── queries_and_rules.md
 ```
 
 
+## Author
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abiodun_Joshua-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/joshua-abiodun-773bb7375)
+
+[![X](https://img.shields.io/badge/X-sudomayor-black?style=for-the-badge&logo=x)](https://x.com/sudomayor)
