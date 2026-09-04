@@ -148,6 +148,6 @@ network-intrusion-detection-lab/
 
 ## Author
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abiodun_Joshua-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/joshua-mayowa-773bb7375)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Joshua_Mayowa-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/joshua-mayowa-773bb7375)
 
 [![X](https://img.shields.io/badge/X-sudomayor-black?style=for-the-badge&logo=x)](https://x.com/sudomayor)
