@@ -78,8 +78,8 @@ Controlled network activity was generated from the Kali Linux against the monito
 
 Activities performed 
 
-- ICMP echo request  ``` ping <Ubuntu-Agent-IP>```
-- Nmap SYN scan    ``` nmap -sS <Ubuntu-Agent-IP>```
+- ICMP echo request  ``` ping -c 20 192.168.0.6 ```
+- Nmap SYN scan    ``` nmap -sS 192.168.0.6 ```
 
 Output: 
 - suricata alerts in ``` eve.json ```
@@ -100,20 +100,24 @@ The resulting events were then displayed in the Wazuh Dashboard for analysis
 
 The alert was analyzed using the following information:
 
-- source IP
-- Destination IP
-- Protocol information
-- Event timestamps
-- Alert/Rule ID 
-- Alert Severity
-- Event description
+- source IP: 192.168.0.4
+- Destination IP: 192.168.0.6
+- Timestamps: 2/sep/2026 [14:14:47]
+- Suricata signature: ET SCAN NMAP -sS window 1024 
+- Signature/Rule ID: 2018317
+- Destination ports: 21, 22, 80.
+- Protocol: TCP
+- Alert Severity: Low
 
 ---
 
-## Findings 
-- Nmap Reconnaissance activity was detected by suricata
-- No successful compromise occurred during the controlled testing.
-- The suricata and wazuh integration provided centralized visibility into detected network activity.
+## Key Findings
+- The source 192.168.0.4 targeted 192.168.0.6 on ports 21, 22, and 80.
+- Suricata identified the traffic as an ET SCAN NMAP -sS scan.
+- The SYN scan activity across multiple ports was consistent with reconnaissance and service discovery.
+- Connection state analysis confirmed these were SYN only probes with no completed TCP handshake, consistent with a half open scan rather than an attempted connection.
+- No authentication attempts, exploitation activity, or other suspicious follow up activity from 192.168.0.4 were observed, and no evidence of compromise was identified during the investigation window. 
+
 
 ---
 
@@ -144,6 +148,6 @@ network-intrusion-detection-lab/
 
 ## Author
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abiodun_Joshua-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/joshua-abiodun-773bb7375)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abiodun_Joshua-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/joshua-mayowa-773bb7375)
 
 [![X](https://img.shields.io/badge/X-sudomayor-black?style=for-the-badge&logo=x)](https://x.com/sudomayor)
